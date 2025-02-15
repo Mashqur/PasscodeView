@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var passcode: String = "1234"
+    var passcode: String = "1230"
     @State var selectedPasscode: String = ""
     @State var filledCircle: Int = 0
     @State private var shakes: CGFloat = 0
@@ -53,8 +53,17 @@ struct ContentView: View {
             }
             .padding(.top, 20)
             
-            buttonCross()
-                .padding()
+            HStack {
+                Spacer()
+                Spacer()
+                Spacer()
+                buttonCell(int: 0)
+                Spacer()
+                buttonCross()
+                
+            }
+            .frame(width: 232)
+            .padding()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .padding()
