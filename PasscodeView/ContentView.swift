@@ -113,7 +113,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    return ContentView()
+    ContentView()
 }
 
 
